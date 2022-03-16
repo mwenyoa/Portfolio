@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 - Basics understanding of Linters
 - structure of a portfolio website
 ### Setup
-- Run [git clone https://github.com/mwenyoa/Portfolio-mobile-skeleton.git] 
+- Run [git clone https://github.com/mwenyoa/Portfolio.git] 
 ### Install
 - Run [npm install] to install all project dependencies
 
