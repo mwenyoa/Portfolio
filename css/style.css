@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif, Arial, Helvetica;
 }
 
 html {
@@ -287,6 +286,14 @@ header a {
   padding: 0 2px;
 }
 
+.head-content .header .lets-connect {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 /* About section */
 .aboutme {
   background-color: #fff;
@@ -302,24 +309,27 @@ header a {
 }
 
 .aboutme .header .lets-connect {
-  text-decoration: none;
-  color: #7f8cff;
-  padding-top: 3px;
-  padding-bottom: 23px;
-  font-weight: 500;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
 
 .aboutme .header .about-title {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
   color: #172b4d;
-  padding: 10px 0;
-  margin: 0;
-  padding-right: 45%;
-  line-height: 44px;
+  position: static;
+  width: 327px;
+  height: 101px;
+  left: 0;
+  top: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .aboutme .header ul {
@@ -416,4 +426,12 @@ header a {
 
 .aboutme .languages .content .cont-item h4 {
   margin-left: 25px;
+}
+
+.aboutme .header p {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
