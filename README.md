@@ -21,6 +21,8 @@ To get a local copy up and running follow these simple example steps.
 - Be familiar with git commands
 - Basics understanding of Linters
 - structure of a portfolio website
+- Familiarity with flexbox
+- Knowledge of css grid
 ### Setup
 - Run [git clone https://github.com/mwenyoa/Portfolio.git] 
 ### Install
