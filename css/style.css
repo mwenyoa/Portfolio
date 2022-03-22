@@ -447,3 +447,78 @@ header a {
   font-size: 16px;
   line-height: 24px;
 }
+.background-2 {
+  background-image: url("../mobile-images/contact-bg-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.head-content .Contact-Me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../mobile-images/Contactme.png");
+  background-size: cover;
+  background-color: #ffffff;
+}
+
+.contact-title {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+color: #ffffff; 
+}
+.contact-description{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
+}
+.Conact-Form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+input {
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 100%;
+  margin:10px;
+}
+textarea {
+  font-family: 'Poppins';
+  font-style: normal;
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 100%;
+  margin:10px;
+  margin-bottom: 20px;
+}
+.float-left{
+  align-self: flex-start;
+}
+.end-line{
+  border: 3px solid black;
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
