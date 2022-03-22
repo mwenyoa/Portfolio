@@ -504,6 +504,14 @@ input {
   border-radius: 8px;
   width: 100%;
   margin: 10px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+display: flex;
+align-items: center;
+color: #172B4D;
 }
 
 textarea {
@@ -515,11 +523,27 @@ textarea {
   width: 100%;
   margin: 10px;
   margin-bottom: 5px;
+  color: #B3BAC5;
 }
 
 .float-left {
   margin-top: 4px;
   align-self: flex-start;
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  /* Button /Normal */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+color: #6070FF;
+width: auto;
 }
 
 .end-line {
