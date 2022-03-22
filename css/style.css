@@ -508,7 +508,7 @@ input {
   border-radius: 8px;
   width: 100%;
   margin: 10px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -538,7 +538,7 @@ textarea {
   align-self: flex-start;
   background-color: #fff;
   border-radius: 8px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -558,4 +558,3 @@ input:valid {
 textarea:valid {
   border: #008000 1px solid;
 }
-
