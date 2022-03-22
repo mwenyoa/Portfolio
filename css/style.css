@@ -562,10 +562,10 @@ textarea {
 }
 
 input:valid {
-  border: #008000 1px solid;
+  border: #008000 2px solid;
 }
 
 textarea:valid {
-  border: #008000 1px solid;
+  border: #008000 2px solid;
 }
 
