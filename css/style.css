@@ -475,6 +475,7 @@ font-weight: 700;
 font-size: 40px;
 line-height: 52px;
 color: #ffffff; 
+margin-top: 100px;
 }
 .contact-description{
   font-family: 'Poppins';
@@ -510,13 +511,15 @@ textarea {
   border-radius: 8px;
   width: 100%;
   margin:10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .float-left{
+  margin-top: 4px;
   align-self: flex-start;
 }
 .end-line{
-  border: 3px solid black;
+  background-color: black;
+  border: 2px solid black;
   width: 30%;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -525,13 +528,8 @@ textarea {
 input:valid{
 border: #008000 1px solid;
 }
-input:invalid{
-  border: #ff0000 1px solid;
-  }
+
 
   textarea:valid{
     border: #008000 1px solid;
     }
-    textarea:invalid{
-      border: #ff0000 1px solid;
-      }
