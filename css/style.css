@@ -552,20 +552,11 @@ textarea {
   width: auto;
 }
 
-.end-line {
-  background-color: black;
-  border: 2px solid black;
-  width: 30%;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
 input:valid {
-  border: #008000 2px solid;
+  border: #008000 1px solid;
 }
 
 textarea:valid {
-  border: #008000 2px solid;
+  border: #008000 1px solid;
 }
 
