@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f7f7f9;
@@ -446,4 +447,114 @@ header a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.background-2 {
+  background-image: url("../mobile-images/contact-bg-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-content .Contact-Me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../mobile-images/Contactme.png");
+  background-size: cover;
+  background-color: #fff;
+}
+
+.contact-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.contact-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.Conact-Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 100%;
+  margin: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+textarea {
+  font-style: normal;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 100%;
+  margin: 10px;
+  margin-bottom: 5px;
+  color: #b3bac5;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.float-left {
+  margin-top: 4px;
+  align-self: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  width: auto;
+}
+
+input:valid {
+  border: #008000 1px solid;
+}
+
+textarea:valid {
+  border: #008000 1px solid;
 }
