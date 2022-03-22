@@ -477,9 +477,11 @@ header a {
   line-height: 52px;
   color: #fff;
   margin-top: 100px;
+  margin-bottom: 15px;
 }
 
 .contact-description {
+  margin-top: 12px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -504,14 +506,14 @@ input {
   border-radius: 8px;
   width: 100%;
   margin: 10px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 20px;
-display: flex;
-align-items: center;
-color: #172B4D;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172B4D;
 }
 
 textarea {
@@ -524,6 +526,10 @@ textarea {
   margin: 10px;
   margin-bottom: 5px;
   color: #B3BAC5;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .float-left {
@@ -531,19 +537,17 @@ textarea {
   align-self: flex-start;
   background-color: #ffffff;
   border-radius: 8px;
-
-  /* Button /Normal */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.03em;
-color: #6070FF;
-width: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070FF;
+  width: auto;
 }
 
 .end-line {
@@ -561,4 +565,10 @@ input:valid {
 
 textarea:valid {
   border: #008000 1px solid;
+}
+
+.contact-description {
+  margin-top:12px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
