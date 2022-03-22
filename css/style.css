@@ -522,3 +522,16 @@ textarea {
   margin-bottom: 10px;
   border-radius: 5px;
 }
+input:valid{
+border: #008000 1px solid;
+}
+input:invalid{
+  border: #ff0000 1px solid;
+  }
+
+  textarea:valid{
+    border: #008000 1px solid;
+    }
+    textarea:invalid{
+      border: #ff0000 1px solid;
+      }
