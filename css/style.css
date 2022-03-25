@@ -304,7 +304,7 @@ header a {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 0  !important;
+  margin-left: 0 !important;
 }
 
 .aboutme {
@@ -626,9 +626,12 @@ textarea:valid {
     object-fit: cover;
     padding-bottom: 0 !important;
   }
-  
+
   .top-header h1 {
-   margin: 140px 100px 12px 0;
+   margin-top: 140px; 
+   margin-right:100px;
+   margin-bottom: 12px;
+   margin-left: 0;
   }
 
  .header .header_desc {
