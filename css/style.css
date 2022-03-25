@@ -284,6 +284,7 @@ header a {
   height: 48px;
   color: #396df2;
   text-align: center;
+  margin-bottom: 0 !important;
 }
 
 .resume-button:hover {
@@ -313,7 +314,7 @@ header a {
 /* About section */
 .aboutme {
   background-color: #fff;
-  padding-bottom: 114px;
+  padding-bottom: 14px;
   display: flex;
   flex-direction: column;
   border-top-right-radius: 80px;
@@ -621,16 +622,14 @@ textarea:valid {
 
   .top-header {
     background-image: url("../desktop-images/Header-bg.png");
-    height: 846px;
+    height: 795px;
     width: 100%;
     background-position: 20px 73px;
     padding-left: 18%;
     border-bottom-left-radius: 80px;
     background-size: 98% 650px;
     object-fit: cover;
-    margin-top: 0px;
-    transform: translateY(100);
-
+    padding-bottom: 0 !important;
   }
   
   .top-header h1{
@@ -643,6 +642,7 @@ textarea:valid {
   margin-right:  100px;
   width: 920px;
   margin-top: 0;
+  padding-right: 180px;
   }
 
   .aboutme .about_desc {
@@ -657,6 +657,7 @@ textarea:valid {
   .top-header .social {
     margin-left: 0;
     padding-bottom: 120px;
+    margin-bottom: 90px;
   }
 
   .aboutme .social {
@@ -746,6 +747,21 @@ textarea:valid {
     flex-grow: 0;
     margin-left: 0;
   }
+
+
+   .card-text-desc {
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 0;
+  }
   .works-section-desktop .card-desk .card-right-content ul {
     display: flex;
     justify-content: flex-start;
@@ -814,11 +830,12 @@ textarea:valid {
   
     
  .desk-pro-btn {
+  text-align: center;
   padding: 12px;
   text-decoration: none;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  width: 150px;
+  width: auto;
   height: 48px;
   color: #396df2;
   text-align: center;
@@ -892,6 +909,7 @@ textarea:valid {
     background: #fff;
     margin-top: 142px !important;
     padding-top: 0!important;
+    margin-bottom: 0 !important;
     width: 100%;
   }
 
@@ -931,9 +949,10 @@ textarea:valid {
     width: 60%;
     padding-top: 100px !important;
     padding-right: 0 !important;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     padding-left:  0 !important;
     margin-left: 0 !important;
+
   }
 
   .aboutme .languages ul {
@@ -966,6 +985,58 @@ textarea:valid {
   .aboutme .languages .content .cont-item h4 {
    float: left;
    margin-left: 0 !important;
-  };
- 
-};
+  }
+  
+  .Contact-Me {
+    background: #6070ff !important;
+    background-image: none !important;
+    border-top-left-radius: 100px;
+    padding: 5%;
+    padding-top: 0 !important;
+  }
+  /* Footer section style */
+  .Contact-Me .background-2 {
+    background-image: url("../desktop-images/contactformshapes.svg");
+   padding-left: 50px;
+   padding-right: 50px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background-size: 96% 705px;
+   background-position: 40px 40px;
+  padding-bottom: 40px;
+  }
+  
+   .contact-description {
+    width: 569px;
+   }
+  form {
+    text-align: center;
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  form button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px !important;
+    margin: 0 auto;
+  }
+  form button:hover {
+    background-color:hsla(223, 63%, 67%, 0.911);
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+   
+  .btn-color {
+    background-color: #4053fc;
+    color: white;
+  }
+  
+  nav {
+    background-color: #fff;
+  }
+}
