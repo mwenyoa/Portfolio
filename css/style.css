@@ -13,7 +13,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color:#f7f7f9;
+  background-color: #f7f7f9;
 }
 
 .nav-menu {
@@ -60,7 +60,7 @@ header a {
 .header h1 {
   font-size: 40px;
   font-family: "Poppins", sans-serif;
-  color:#172b4d;
+  color: #172b4d;
   width: 90%;
   font-weight: 700;
 }
@@ -99,7 +99,7 @@ header a {
 }
 
 .work-section {
-  background-color:#e5e5e5;
+  background-color: #e5e5e5;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -141,7 +141,7 @@ header a {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color:#172b4d;
+  color: #172b4d;
 }
 
 .card > ul {
@@ -174,7 +174,7 @@ header a {
 }
 
 .works-section .card {
-  background:#fff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
@@ -200,7 +200,7 @@ header a {
 
 .card ul li {
   margin-right: 20px;
-  background-color:#ebebff;
+  background-color: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
   color: #6070ff;
@@ -575,9 +575,8 @@ textarea:valid {
   * {
     box-sizing: border-box;
   }
-  
-  html 
-  body {
+
+  html body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -628,15 +627,15 @@ textarea:valid {
   }
 
   .top-header h1 {
-   margin-top: 140px; 
-   margin-right:100px;
-   margin-bottom: 12px;
-   margin-left: 0;
+    margin-top: 140px;
+    margin-right: 100px;
+    margin-bottom: 12px;
+    margin-left: 0;
   }
 
- .header .header_desc {
+  .header .header_desc {
     margin-left: 0;
-    margin-right:  100px;
+    margin-right: 100px;
     width: 920px;
     margin-top: 0;
     padding-right: 180px;
@@ -667,18 +666,6 @@ textarea:valid {
     margin-left: 0 !important;
   }
 
-   .header .works-section-desktop {
-      background-color:#e5e5e5;
-  }
-
- .works-section .card-desk {
-    background: #fff;
-  }
-
-  .mobile {
-    display: none;
-  }
-
   .works-section-desktop {
     height: auto;
     display: block;
@@ -689,16 +676,27 @@ textarea:valid {
     padding: 100px 100px 0 100px;
   }
 
+  .header .works-section-desktop {
+    background-color: #e5e5e5;
+  }
+
+  .works-section .card-desk {
+    background: #fff;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   .works-section-desktop .card-desk {
     display: grid;
     margin-bottom: 142px;
-    grid-template-areas:
-      "A A A A A B    B B B B B B";
+    grid-template-areas: "A A A A A B    B B B B B B";
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     background-color: #fff;
     height: 496px;
     width: 100%;
-    left: 0px;
+    left: 0;
     margin-top: 30px;
     border-radius: 24px;
     padding: 24px;
@@ -711,11 +709,6 @@ textarea:valid {
     margin: 24px;
     border-radius: 8px;
     grid-area: A;
-  }
-  
-  .works-section-desktop .card-desk {
-    display: flex;
-    width: 100%;
   }
 
   .card .img-num1 {
@@ -730,7 +723,6 @@ textarea:valid {
     justify-content: flex-end;
     padding-left: 10px;
     padding-right: 10px;
-    justify-content: flex-end;
   }
 
   .works-section-desktop .card-desk .card-right-content {
@@ -741,9 +733,9 @@ textarea:valid {
     margin-left: 20px;
   }
 
-  .works-section-desktop .card-desk .card-right-content .card-text-desc {
+  .works-section-desktop .card-text-desc {
     width: 100%;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -755,9 +747,9 @@ textarea:valid {
     margin-left: 0;
   }
 
-   .works-section-desktop .card-text-desc {
+  .works-section-desktop .card-desk .card-right-content .card-text-desc {
     width: 100%;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -767,6 +759,14 @@ textarea:valid {
     order: 1;
     flex-grow: 0;
     margin-left: 0;
+  }
+
+  .aboutme .languages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 25px;
+    margin: 10px 0;
   }
 
   .works-section-desktop .card-desk .card-right-content ul {
@@ -776,7 +776,17 @@ textarea:valid {
     padding: 0;
     width: 100%;
   }
-  
+
+  .card-lang-lft li {
+    list-style: none;
+    margin-right: 20px;
+    background-color: #ebebff;
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: #6070ff;
+    font-family: 'Poppins', sans-serif;
+  }
+
   .works-section-desktop .card-desk ul li {
     list-style: none;
     margin-right: 10px;
@@ -794,20 +804,10 @@ textarea:valid {
     padding: 0;
   }
 
-   .card-lang-lft li {
-    list-style: none;
-    margin-right: 20px;
-    background-color:#ebebff;
-    padding: 4px 12px;
-    border-radius: 8px;
-    color:#6070ff;
-    font-family: 'Poppins', sans-serif;
-  }
-
   .canopy {
     width: 75px;
     height: 24px;
-    left: 0px;
+    left: 0;
     top: 8px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -820,7 +820,7 @@ textarea:valid {
     flex-grow: 0;
     margin: 0;
   }
-   
+
   .fa-circle {
     position: static;
     width: 8px;
@@ -831,66 +831,66 @@ textarea:valid {
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 12px
+    margin: 0 12px;
   }
-  
- .desk-pro-btn {
-  padding: 12px;
-  text-decoration: none;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  height: 48px;
-  color: #396df2;
-  text-align: center;
-  font-family: 'Poppins', Times, serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  letter-spacing: 0.03em;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 10px;
-  position: static;
-  left: 12px;
-  margin-top: 48px;
-  margin-left: 0;
-  width: 130px;
+
+  .desk-pro-btn {
+    padding: 12px;
+    text-decoration: none;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    height: 48px;
+    color: #396df2;
+    text-align: center;
+    font-family: 'Poppins', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    letter-spacing: 0.03em;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 10px;
+    position: static;
+    left: 12px;
+    margin-top: 48px;
+    margin-left: 0;
+    width: 130px;
   }
-  
+
   .works-section-desktop .card-desk .card-right-content .project-title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
     flex: none;
     order: 0;
     flex-grow: 0;
     margin: 12px 0;
   }
 
-   .works-section-desktop .card-desk .card-right-content .sub-text {
+  .works-section-desktop .card-desk .card-right-content .sub-text {
     position: static;
     width: 120px;
     height: 24px;
-    left: 0px;
+    left: 0;
     top: 8px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #6B778C;
+    color: #6b778c;
     flex: none;
     order: 0;
     flex-grow: 0;
     margin: 0;
-   }
+  }
 
- .desk-pro-btn:hover {
+  .desk-pro-btn:hover {
     background-color: #396df2;
     color: #fff;
   }
@@ -898,13 +898,13 @@ textarea:valid {
   .card-content {
     padding: 30px;
   }
-   
+
   .aboutme {
     flex-direction: row;
     align-items: center;
     padding-left: 100px !important;
     padding-right: 100px !important;
-    height:auto;
+    height: auto;
     background: #fff;
     margin-top: 142px !important;
     padding-top: 0 !important;
@@ -934,12 +934,11 @@ textarea:valid {
   }
 
   .aboutme .header p {
-    font-size: 1.3vw;
+    font-size: 16px;
     margin-top: 0 !important;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
     line-height: 24px;
   }
 
@@ -949,16 +948,8 @@ textarea:valid {
     padding-top: 100px !important;
     padding-right: 0 !important;
     padding-bottom: 5px;
-    padding-left:  0 !important;
+    padding-left: 0 !important;
     margin-left: 0 !important;
-  }
-
-  .aboutme .languages ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 25px;
-    margin: 10px 0;
   }
 
   .aboutme .languages .content {
@@ -979,12 +970,12 @@ textarea:valid {
     height: 110px;
     display: flex;
   }
-  
+
   .aboutme .languages .content .cont-item h4 {
-   float: left;
-   margin-left: 0 !important;
+    float: left;
+    margin-left: 0 !important;
   }
-  
+
   .Contact-Me {
     background: #6070ff !important;
     background-image: none !important;
@@ -992,7 +983,7 @@ textarea:valid {
     padding: 5%;
     padding-top: 0 !important;
   }
- 
+
   .Contact-Me .background-2 {
     background-image: url("../desktop-images/contactformshapes.svg");
     padding-left: 50px;
@@ -1005,7 +996,7 @@ textarea:valid {
     background-position: 40px 40px;
     padding-bottom: 40px;
   }
-  
+
   .contact-description {
     width: 569px;
   }
@@ -1022,23 +1013,22 @@ textarea:valid {
   form button {
     display: flex;
     justify-content: center;
-    margin-top: 30px !important;
     margin: 0 auto;
+    margin-top: 30px !important;
   }
 
   form button:hover {
-    background-color:hsla(223, 63%, 67%, 0.911);
+    background-color: hsla(223, 63%, 67%, 0.911);
     cursor: pointer;
     border: 1px solid #fff;
   }
-   
+
   .btn-color {
     background-color: #4053fc;
     color: #fff;
   }
-  
+
   nav {
     background-color: #fff;
   }
-  
 }
