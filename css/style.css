@@ -13,9 +13,9 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f9;
+  background-color:#f7f7f9;
 }
- 
+
 .nav-menu {
   display: none;
 }
@@ -62,7 +62,7 @@ header a {
   font-family: "Poppins", sans-serif;
   color:#172b4d;
   width: 90%;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .header p {
@@ -79,7 +79,7 @@ header a {
   padding-top: 3px;
   padding-bottom: 23px;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 24px;
 }
 
@@ -122,6 +122,7 @@ header a {
 .desktop {
   display: none;
 }
+
 .work-section .card img {
   height: 220px;
   width: 295px;
@@ -172,7 +173,7 @@ header a {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-.works-section > .card {
+.works-section .card {
   background:#fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -570,22 +571,21 @@ textarea:valid {
   display: none;
 }
 
-@media (min-width: 768px){
-
+@media (min-width: 768px) {
   * {
     box-sizing: border-box;
   }
   
-  html
+  html 
   body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
   }
-   
+
   .nav-menu {
     display: flex;
     justify-content: flex-end;
@@ -595,8 +595,7 @@ textarea:valid {
     background-color: #fff;
   }
 
-  .nav-menu .nav-list{
-    padding-left: 32px;
+  .nav-menu .nav-list {
     padding-left: 32px;
     margin-top: 25px;
     list-style: none;
@@ -628,16 +627,16 @@ textarea:valid {
     padding-bottom: 0 !important;
   }
   
-  .top-header h1{
+  .top-header h1 {
    margin: 140px 100px 12px 0;
   }
 
  .header .header_desc {
-  margin-left: 0;
-  margin-right:  100px;
-  width: 920px;
-  margin-top: 0;
-  padding-right: 180px;
+    margin-left: 0;
+    margin-right:  100px;
+    width: 920px;
+    margin-top: 0;
+    padding-right: 180px;
   }
 
   .aboutme .about_desc {
@@ -648,7 +647,7 @@ textarea:valid {
   .header .lesconnect {
     margin-left: 0;
   }
-  
+
   .top-header .social {
     margin-left: 0;
     padding-bottom: 120px;
@@ -659,19 +658,20 @@ textarea:valid {
     margin-left: 0;
     padding-bottom: 46px;
   }
+
   .aboutme .resume-button {
     margin-top: 0 !important;
     margin-left: 0 !important;
   }
 
    .header .works-section-desktop {
-    background-color:#e5e5e5;
+      background-color:#e5e5e5;
   }
 
-  .header .works-section .card-desk {
+ .works-section .card-desk {
     background: #fff;
   }
-  
+
   .mobile {
     display: none;
   }
@@ -679,10 +679,10 @@ textarea:valid {
   .works-section-desktop {
     height: auto;
     display: block;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     padding: 100px 100px 0 100px;
   }
 
@@ -710,7 +710,7 @@ textarea:valid {
     grid-area: A;
   }
   
-  .card-desk {
+  .works-section-desktop .card-desk {
     display: flex;
     width: 100%;
   }
@@ -719,10 +719,6 @@ textarea:valid {
     margin: 30px !important;
   }
 
-  .works-section-desktop .card-desk .img-right {
-      justify-content: flex-end;
-    }
-
   .works-section-desktop .card-desk .card-left-content {
     justify-content: flex-start;
   }
@@ -730,7 +726,8 @@ textarea:valid {
   .works-section-desktop .card-desk .img-right {
     justify-content: flex-end;
     padding-left: 10px;
-    padding-right: 10px
+    padding-right: 10px;
+    justify-content: flex-end;
   }
 
   .works-section-desktop .card-desk .card-right-content {
@@ -755,7 +752,7 @@ textarea:valid {
     margin-left: 0;
   }
 
-   .card-text-desc {
+   .works-section-desktop .card-text-desc {
     width: 100%;
     font-family: 'Poppins',sans-serif;
     font-style: normal;
@@ -777,7 +774,7 @@ textarea:valid {
     width: 100%;
   }
   
-  .works-section-desktop .card-desk ul li{
+  .works-section-desktop .card-desk ul li {
     list-style: none;
     margin-right: 10px;
     background-color: #ebebff;
@@ -785,7 +782,6 @@ textarea:valid {
     border-radius: 8px;
     color: #6070ff;
     font-family: 'Poppins', sans-serif;
-
   }
 
   .card-lang-lft {
