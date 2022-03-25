@@ -16,7 +16,10 @@ body {
   background-color: #f7f7f9;
 }
 
-/* Nav style */
+.nav-menu {
+  display: none;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -25,6 +28,7 @@ header nav {
   padding-left: 8%;
   padding-right: 8%;
   height: 72px;
+  color: #344563;
 }
 
 header .logo {
@@ -39,9 +43,6 @@ header a {
   display: block;
 }
 
-/* Main style */
-
-/* Header section style */
 .header {
   background-image: url("../mobile-images/header-shapes\ mobile.png");
   height: 718px;
@@ -97,7 +98,6 @@ header a {
   margin-right: 20px;
 }
 
-/* work section styles */
 .work-section {
   background-color: #e5e5e5;
   width: 100%;
@@ -119,6 +119,10 @@ header a {
   top: 114px;
 }
 
+.desktop {
+  display: none;
+}
+
 .work-section .card img {
   height: 220px;
   width: 295px;
@@ -132,7 +136,7 @@ header a {
 }
 
 .project-title {
-  font-family: Poppins, sans-serif, Arial, Helvetica;
+  font-family: 'Poppins', sans-serif, Arial, Helvetica;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -161,7 +165,6 @@ header a {
   text-align: left;
 }
 
-/* My Projects section style */
 .works-section {
   display: grid;
   grid-row-gap: 88px;
@@ -170,7 +173,7 @@ header a {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-.works-section > .card {
+.works-section .card {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -246,7 +249,7 @@ header a {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  margin: 0 0;
+  margin: 0;
   width: 85%;
 }
 
@@ -277,6 +280,7 @@ header a {
   height: 48px;
   color: #396df2;
   text-align: center;
+  margin-bottom: 0 !important;
 }
 
 .resume-button:hover {
@@ -300,12 +304,12 @@ header a {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 0 !important;
 }
 
-/* About section */
 .aboutme {
   background-color: #fff;
-  padding-bottom: 114px;
+  padding-bottom: 14px;
   display: flex;
   flex-direction: column;
   border-top-right-radius: 80px;
@@ -322,6 +326,10 @@ header a {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+}
+
+.aboutme .social {
+  margin-left: 0 !important;
 }
 
 .language {
@@ -557,4 +565,470 @@ input:valid {
 
 textarea:valid {
   border: #008000 1px solid;
+}
+
+.works-section-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    height: 70px;
+    overflow-x: hidden;
+    background-color: #fff;
+  }
+
+  .nav-menu .nav-list {
+    padding-left: 32px;
+    margin-top: 25px;
+    list-style: none;
+    color: #344563 !important;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    background-color: #fff;
+  }
+
+  .header-mobile {
+    display: none;
+  }
+
+  .top-header {
+    background-image: url("../desktop-images/Header-bg.png");
+    height: 795px;
+    width: 100%;
+    background-position: 20px 73px;
+    padding-left: 18%;
+    border-bottom-left-radius: 80px;
+    background-size: 98% 650px;
+    object-fit: cover;
+    padding-bottom: 0 !important;
+  }
+
+  .top-header h1 {
+    margin-top: 140px;
+    margin-right: 100px;
+    margin-bottom: 12px;
+    margin-left: 0;
+  }
+
+  .header .header_desc {
+    margin-left: 0;
+    margin-right: 100px;
+    width: 920px;
+    margin-top: 0;
+    padding-right: 180px;
+  }
+
+  .aboutme .about_desc {
+    max-width: 447px;
+    width: 100%;
+  }
+
+  .header .lesconnect {
+    margin-left: 0;
+  }
+
+  .top-header .social {
+    margin-left: 0;
+    padding-bottom: 120px;
+    margin-bottom: 90px;
+  }
+
+  .aboutme .social {
+    margin-left: 0;
+    padding-bottom: 46px;
+  }
+
+  .aboutme .resume-button {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .works-section-desktop {
+    height: auto;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 100px 100px 0 100px;
+  }
+
+  .header .works-section-desktop {
+    background-color: #e5e5e5;
+  }
+
+  .works-section .card-desk {
+    background: #fff;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .works-section-desktop .card-desk {
+    display: grid;
+    margin-bottom: 142px;
+    grid-template-areas: "A A A A A B    B B B B B B";
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    height: 496px;
+    width: 100%;
+    left: 0;
+    margin-top: 30px;
+    border-radius: 24px;
+    padding: 24px;
+    overflow-y: hidden;
+  }
+
+  .works-section-desktop .card-desk .img-left {
+    width: 100%;
+    height: 100%;
+    margin: 24px;
+    border-radius: 8px;
+    grid-area: A;
+  }
+
+  .card .img-num1 {
+    margin: 30px !important;
+  }
+
+  .works-section-desktop .card-desk .card-left-content {
+    justify-content: flex-start;
+  }
+
+  .works-section-desktop .card-desk .img-right {
+    justify-content: flex-end;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .works-section-desktop .card-desk .card-right-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    grid-area: B;
+    margin-left: 20px;
+  }
+
+  .works-section-desktop .card-text-desc {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 0;
+  }
+
+  .works-section-desktop .card-desk .card-right-content .card-text-desc {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 0;
+  }
+
+  .aboutme .languages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 25px;
+    margin: 10px 0;
+  }
+
+  .works-section-desktop .card-desk .card-right-content ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .card-lang-lft li {
+    list-style: none;
+    margin-right: 20px;
+    background-color: #ebebff;
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: #6070ff;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .works-section-desktop .card-desk ul li {
+    list-style: none;
+    margin-right: 10px;
+    background-color: #ebebff;
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: #6070ff;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .card-lang-lft {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .canopy {
+    width: 75px;
+    height: 24px;
+    left: 0;
+    top: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0;
+  }
+
+  .fa-circle {
+    position: static;
+    width: 8px;
+    height: 8px;
+    left: 87px;
+    top: 16px;
+    color: #c1c7d0;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0 12px;
+  }
+
+  .desk-pro-btn {
+    padding: 12px;
+    text-decoration: none;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    height: 48px;
+    color: #396df2;
+    text-align: center;
+    font-family: 'Poppins', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    letter-spacing: 0.03em;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 10px;
+    position: static;
+    left: 12px;
+    margin-top: 48px;
+    margin-left: 0;
+    width: 130px;
+  }
+
+  .works-section-desktop .card-desk .card-right-content .project-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0;
+  }
+
+  .works-section-desktop .card-desk .card-right-content .sub-text {
+    position: static;
+    width: 120px;
+    height: 24px;
+    left: 0;
+    top: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0;
+  }
+
+  .desk-pro-btn:hover {
+    background-color: #396df2;
+    color: #fff;
+  }
+
+  .card-content {
+    padding: 30px;
+  }
+
+  .aboutme {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    height: auto;
+    background: #fff;
+    margin-top: 142px !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    width: 100%;
+  }
+
+  .aboutme .header {
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+    width: 50%;
+    height: 600px;
+  }
+
+  .aboutme .header .about-title {
+    margin-top: 60px;
+    margin-bottom: 12px !important;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #091e42;
+  }
+
+  .aboutme .header p {
+    font-size: 16px;
+    margin-top: 0 !important;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .aboutme .languages {
+    display: grid;
+    width: 60%;
+    padding-top: 100px !important;
+    padding-right: 0 !important;
+    padding-bottom: 5px;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .aboutme .languages .content {
+    padding: 0;
+    margin: 0 6px;
+  }
+
+  .aboutme .languages .content div {
+    padding: 0;
+  }
+
+  .aboutme .languages .content .cont-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 9px;
+    line-height: 10px;
+    width: 110px;
+    height: 110px;
+    display: flex;
+  }
+
+  .aboutme .languages .content .cont-item h4 {
+    float: left;
+    margin-left: 0 !important;
+  }
+
+  .Contact-Me {
+    background: #6070ff !important;
+    background-image: none !important;
+    border-top-left-radius: 100px;
+    padding: 5%;
+    padding-top: 0 !important;
+  }
+
+  .Contact-Me .background-2 {
+    background-image: url("../desktop-images/contactformshapes.svg");
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 96% 705px;
+    background-position: 40px 40px;
+    padding-bottom: 40px;
+  }
+
+  .contact-description {
+    width: 569px;
+  }
+
+  form {
+    text-align: center;
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  form button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px !important;
+  }
+
+  form button:hover {
+    background-color: hsla(223, 63%, 67%, 0.911);
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+
+  .btn-color {
+    background-color: #4053fc;
+    color: #fff;
+  }
+
+  nav {
+    background-color: #fff;
+  }
 }
