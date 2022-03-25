@@ -16,7 +16,6 @@ body {
   background-color: #f7f7f9;
 }
  
-/* Nav style */
 .nav-menu {
   display: none;
 }
@@ -43,9 +42,6 @@ header a {
   display: block;
 }
 
-/* Main style */
-
-/* Header section style */
 .header {
   background-image: url("../mobile-images/header-shapes\ mobile.png");
   height: 718px;
@@ -101,7 +97,6 @@ header a {
   margin-right: 20px;
 }
 
-/* work section styles */
 .work-section {
   background-color: #e5e5e5;
   width: 100%;
@@ -168,7 +163,6 @@ header a {
   text-align: left;
 }
 
-/* My Projects section style */
 .works-section {
   display: grid;
   grid-row-gap: 88px;
@@ -311,7 +305,6 @@ header a {
   margin-left: 0  !important;
 }
 
-/* About section */
 .aboutme {
   background-color: #fff;
   padding-bottom: 14px;
@@ -575,7 +568,7 @@ textarea:valid {
 .works-section-desktop {
   display: none;
 }
-/* Desktop responsive css styling */
+
 @media (min-width: 768px){
   * {
     box-sizing: border-box;
@@ -616,6 +609,7 @@ textarea:valid {
     line-height: 20px;
     background-color: #fff;
   }
+
   .header-mobile {
     display: none;
   }
@@ -635,7 +629,6 @@ textarea:valid {
   .top-header h1{
    margin: 140px 100px 12px 0;
   }
-
 
  .header .header_desc {
   margin-left: 0;
@@ -680,7 +673,7 @@ textarea:valid {
   .mobile {
     display: none;
   }
-  /* Desktop work section styling */
+
   .works-section-desktop {
     height: auto;
     display: block;
@@ -705,7 +698,8 @@ textarea:valid {
     border-radius: 24px;
     padding: 24px;
     overflow-y: hidden;
-  };
+  }
+
   .works-section-desktop .card-desk .img-left {
     width: 100%;
     height: 100%;
@@ -719,14 +713,22 @@ textarea:valid {
     width: 100%;
   }
 
+  .works-section-desktop .card-desk .img-right {
+    justify-content: flex-end;
+    padding-left: 30px;
+    padding-right: 30px
+    }
+
   .works-section-desktop .card-desk .card-left-content {
     justify-content: flex-start;
   }
+
   .works-section-desktop .card-desk .img-right {
   justify-content: flex-end;
   padding-left: 30px;
   padding-right: 30px
   }
+
   .works-section-desktop .card-desk .card-right-content {
     width: 100%;
     height: 100%;
@@ -734,6 +736,7 @@ textarea:valid {
     grid-area: B;
     margin-left: 20px;
   }
+
   .works-section-desktop .card-desk .card-right-content .card-text-desc {
     width: 100%;
     font-family: 'Poppins',sans-serif;
@@ -748,7 +751,6 @@ textarea:valid {
     margin-left: 0;
   }
 
-
    .card-text-desc {
     width: 100%;
     font-family: 'Poppins',sans-serif;
@@ -762,6 +764,7 @@ textarea:valid {
     flex-grow: 0;
     margin-left: 0;
   }
+
   .works-section-desktop .card-desk .card-right-content ul {
     display: flex;
     justify-content: flex-start;
@@ -828,7 +831,6 @@ textarea:valid {
     margin: 0px 12px
   }
   
-    
  .desk-pro-btn {
   text-align: center;
   padding: 12px;
@@ -899,7 +901,6 @@ textarea:valid {
     padding: 30px;
   }
    
-   /* About Us section style */
   .aboutme {
     flex-direction: row;
     align-items: center;
@@ -994,23 +995,24 @@ textarea:valid {
     padding: 5%;
     padding-top: 0 !important;
   }
-  /* Footer section style */
+ 
   .Contact-Me .background-2 {
     background-image: url("../desktop-images/contactformshapes.svg");
-   padding-left: 50px;
-   padding-right: 50px;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   background-size: 96% 705px;
-   background-position: 40px 40px;
-  padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 96% 705px;
+    background-position: 40px 40px;
+    padding-bottom: 40px;
   }
   
-   .contact-description {
+  .contact-description {
     width: 569px;
-   }
+  }
+
   form {
     text-align: center;
     padding: 0 20%;
@@ -1019,12 +1021,14 @@ textarea:valid {
     flex-direction: column;
     margin: 0 auto;
   }
+
   form button {
     display: flex;
     justify-content: center;
     margin-top: 30px !important;
     margin: 0 auto;
   }
+
   form button:hover {
     background-color:hsla(223, 63%, 67%, 0.911);
     cursor: pointer;
@@ -1039,4 +1043,5 @@ textarea:valid {
   nav {
     background-color: #fff;
   }
+  
 }
