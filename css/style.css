@@ -598,7 +598,7 @@ textarea:valid {
     padding-left: 32px;
     margin-top: 25px;
     list-style: none;
-    color: #344563;
+    color: #344563 !important;
     flex: none;
     order: 0;
     flex-grow: 0;
