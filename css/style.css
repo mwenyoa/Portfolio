@@ -19,6 +19,7 @@ body {
 .nav-menu {
   display: none;
 }
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -59,9 +60,9 @@ header a {
 .header h1 {
   font-size: 40px;
   font-family: "Poppins", sans-serif;
-  color: #172b4d;
+  color:#172b4d;
   width: 90%;
-  font-weight: 700;
+  font-weight: 700px;
 }
 
 .header p {
@@ -78,7 +79,7 @@ header a {
   padding-top: 3px;
   padding-bottom: 23px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 500px;
   line-height: 24px;
 }
 
@@ -98,7 +99,7 @@ header a {
 }
 
 .work-section {
-  background-color: #e5e5e5;
+  background-color:#e5e5e5;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -134,12 +135,12 @@ header a {
 }
 
 .project-title {
-  font-family: Poppins, sans-serif, Arial, Helvetica;
+  font-family: 'Poppins', sans-serif, Arial, Helvetica;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172b4d;
+  color:#172b4d;
 }
 
 .card > ul {
@@ -172,7 +173,7 @@ header a {
 }
 
 .works-section > .card {
-  background: #fff;
+  background:#fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
@@ -198,7 +199,7 @@ header a {
 
 .card ul li {
   margin-right: 20px;
-  background-color: #ebebff;
+  background-color:#ebebff;
   padding: 4px 12px;
   border-radius: 8px;
   color: #6070ff;
@@ -247,7 +248,7 @@ header a {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  margin: 0 0;
+  margin: 0;
   width: 85%;
 }
 
@@ -570,6 +571,7 @@ textarea:valid {
 }
 
 @media (min-width: 768px){
+
   * {
     box-sizing: border-box;
   }
@@ -594,15 +596,15 @@ textarea:valid {
   }
 
   .nav-menu .nav-list{
-    padding-left:32px;
-    padding-left:32px;
+    padding-left: 32px;
+    padding-left: 32px;
     margin-top: 25px;
     list-style: none;
     color: #344563;
     flex: none;
     order: 0;
     flex-grow: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -658,7 +660,7 @@ textarea:valid {
     padding-bottom: 46px;
   }
   .aboutme .resume-button {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
     margin-left: 0 !important;
   }
 
@@ -713,10 +715,12 @@ textarea:valid {
     width: 100%;
   }
 
+  .card .img-num1 {
+    margin: 30px !important;
+  }
+
   .works-section-desktop .card-desk .img-right {
-    justify-content: flex-end;
-    padding-left: 30px;
-    padding-right: 30px
+      justify-content: flex-end;
     }
 
   .works-section-desktop .card-desk .card-left-content {
@@ -724,9 +728,9 @@ textarea:valid {
   }
 
   .works-section-desktop .card-desk .img-right {
-  justify-content: flex-end;
-  padding-left: 30px;
-  padding-right: 30px
+    justify-content: flex-end;
+    padding-left: 10px;
+    padding-right: 10px
   }
 
   .works-section-desktop .card-desk .card-right-content {
@@ -794,10 +798,10 @@ textarea:valid {
    .card-lang-lft li {
     list-style: none;
     margin-right: 20px;
-    background-color: #ebebff;
+    background-color:#ebebff;
     padding: 4px 12px;
     border-radius: 8px;
-    color: #6070ff;
+    color:#6070ff;
     font-family: 'Poppins', sans-serif;
   }
 
@@ -806,7 +810,7 @@ textarea:valid {
     height: 24px;
     left: 0px;
     top: 8px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -815,7 +819,7 @@ textarea:valid {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0;
   }
    
   .fa-circle {
@@ -832,33 +836,28 @@ textarea:valid {
   }
   
  .desk-pro-btn {
-  text-align: center;
   padding: 12px;
   text-decoration: none;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  width: auto;
   height: 48px;
   color: #396df2;
   text-align: center;
   font-family: 'Poppins', Times, serif;
   font-weight: bold;
-  font-family: 'Poppins';
   font-style: normal;
   font-size: 17px;
   line-height: 24px;
   display: flex;
   letter-spacing: 0.03em;
-  color: #396DF2;
-  flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 10px;
+  margin: 0 10px;
   position: static;
-  width: 150px;
   left: 12px;
   margin-top: 48px;
   margin-left: 0;
+  width: 130px;
   }
   
   .works-section-desktop .card-desk .card-right-content .project-title {
@@ -871,7 +870,7 @@ textarea:valid {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
    .works-section-desktop .card-desk .card-right-content .sub-text {
@@ -889,7 +888,7 @@ textarea:valid {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0;
    }
 
  .desk-pro-btn:hover {
@@ -909,7 +908,7 @@ textarea:valid {
     height:auto;
     background: #fff;
     margin-top: 142px !important;
-    padding-top: 0!important;
+    padding-top: 0 !important;
     margin-bottom: 0 !important;
     width: 100%;
   }
@@ -932,13 +931,13 @@ textarea:valid {
     line-height: 52px;
     display: flex;
     align-items: center;
-    color: #091E42;
+    color: #091e42;
   }
 
   .aboutme .header p {
     font-size: 1.3vw;
     margin-top: 0 !important;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -953,7 +952,6 @@ textarea:valid {
     padding-bottom: 5px;
     padding-left:  0 !important;
     margin-left: 0 !important;
-
   }
 
   .aboutme .languages ul {
@@ -1037,7 +1035,7 @@ textarea:valid {
    
   .btn-color {
     background-color: #4053fc;
-    color: white;
+    color: #fff;
   }
   
   nav {
