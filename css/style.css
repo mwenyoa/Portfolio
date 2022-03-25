@@ -307,6 +307,7 @@ header a {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 0  !important;
 }
 
 /* About section */
@@ -329,6 +330,10 @@ header a {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+}
+
+.aboutme .social {
+  margin-left: 0 !important;
 }
 
 .language {
@@ -575,15 +580,14 @@ textarea:valid {
     box-sizing: border-box;
   }
   
-  html {
-    scroll-behavior: smooth;
-  }
-  
+  html
   body {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    width: 100%;
+    width:100%;
+    height:100%;
   }
    
   .nav-menu {
@@ -614,7 +618,8 @@ textarea:valid {
   .header-mobile {
     display: none;
   }
-  .header {
+
+  .top-header {
     background-image: url("../desktop-images/Header-bg.png");
     height: 846px;
     width: 100%;
@@ -625,22 +630,42 @@ textarea:valid {
     object-fit: cover;
     margin-top: 0px;
     transform: translateY(100);
+
   }
   
-  .header h1{
-   margin: 150px 100px 12px 100px;
+  .top-header h1{
+   margin: 140px 100px 12px 0;
   }
 
-  .header p {
-    margin-left: 100px;
-    margin-right:  100px;
+
+ .header .header_desc {
+  margin-left: 0;
+  margin-right:  100px;
+  width: 920px;
+  margin-top: 0;
   }
-  .header .lets-connect {
-    margin-left:  100px;
+
+  .aboutme .about_desc {
+    max-width: 447px;
+    width: 100%;
+  }
+
+  .header .lesconnect {
+    margin-left: 0;
   }
   
-  .header .social {
-    margin-left:  100px;
+  .top-header .social {
+    margin-left: 0;
+    padding-bottom: 120px;
+  }
+
+  .aboutme .social {
+    margin-left: 0;
+    padding-bottom: 46px;
+  }
+  .aboutme .resume-button {
+    margin-top: 0px !important;
+    margin-left: 0 !important;
   }
 
    .header .works-section-desktop {
@@ -662,7 +687,7 @@ textarea:valid {
     right: 0px;
     top: 0px;
     bottom: 0px;
-    padding: 100px 100px 20px 100px;
+    padding: 100px 100px 0 100px;
   }
 
   .works-section-desktop .card-desk {
@@ -856,12 +881,91 @@ textarea:valid {
   .card-content {
     padding: 30px;
   }
-
-  /* About section styles */
-
-    
-};
-  /* mobile version styling */
-@media (max-width: 768px){
    
-}
+   /* About Us section style */
+  .aboutme {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    height:auto;
+    background: #fff;
+    margin-top: 142px !important;
+    padding-top: 0!important;
+    width: 100%;
+  }
+
+  .aboutme .header {
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+    width: 50%;
+    height: 600px;
+  }
+
+  .aboutme .header .about-title {
+    margin-top: 60px;
+    margin-bottom: 12px !important;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #091E42;
+  }
+
+  .aboutme .header p {
+    font-size: 1.3vw;
+    margin-top: 0 !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .aboutme .languages {
+    display: grid;
+    width: 60%;
+    padding-top: 100px !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    padding-left:  0 !important;
+    margin-left: 0 !important;
+  }
+
+  .aboutme .languages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 25px;
+    margin: 10px 0;
+  }
+
+  .aboutme .languages .content {
+    padding: 0;
+    margin: 0 6px;
+  }
+
+  .aboutme .languages .content div {
+    padding: 0;
+  }
+
+  .aboutme .languages .content .cont-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 9px;
+    line-height: 10px;
+    width: 110px;
+    height: 110px;
+    display: flex;
+  }
+  
+  .aboutme .languages .content .cont-item h4 {
+   float: left;
+   margin-left: 0 !important;
+  };
+ 
+};
