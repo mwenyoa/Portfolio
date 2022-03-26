@@ -33,6 +33,10 @@ body {
   display: none;
 }
 
+.animation-title {
+  animation:  1s ease-out 0s 1 slideInRight;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
