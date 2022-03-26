@@ -16,8 +16,38 @@ body {
   background-color: #f7f7f9;
 }
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-title {
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
 .nav-menu {
   display: none;
+}
+
+.animation-title {
+  animation: 1s ease-out 0s 1 slideInRight;
+}
+
+.social-icon:hover {
+  animation: animateme 4s infinite;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes animateme {
+  100% { transform: rotate(360deg); }
 }
 
 header nav {
