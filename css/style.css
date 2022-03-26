@@ -37,6 +37,18 @@ body {
   animation:  1s ease-out 0s 1 slideInRight;
 }
 
+.social-icon:hover {
+  animation: animateme 4s infinite;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes animateme {
+  100% { transform: rotate(360deg); }
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
