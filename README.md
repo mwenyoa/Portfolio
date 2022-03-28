@@ -12,6 +12,10 @@ This a personal  portfolio project to make us familiar with tools(like **Figma**
 - CSS
 - Figma template
 
+## Live Demo
+
+[Click here to view Live website Demo](https://mwenyoa.github.io/Portfolio/)
+
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
