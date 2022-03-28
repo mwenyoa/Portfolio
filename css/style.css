@@ -71,6 +71,7 @@ header .logo {
 header a {
   text-decoration: none;
   display: block;
+  color: #091e42;
 }
 
 .header {
@@ -638,6 +639,10 @@ textarea:valid {
     font-size: 15px;
     line-height: 20px;
     background-color: #fff;
+  }
+
+  .nav-menu .nav-list a {
+    color: #091e42;
   }
 
   .header-mobile {

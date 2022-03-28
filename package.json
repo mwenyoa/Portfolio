@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-mobile-skeleton",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mwenyoa/Portfolio-mobile-skeleton.git"
+    "url": "git+https://github.com/mwenyoa/Portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mwenyoa/Portfolio-mobile-skeleton/issues"
+    "url": "https://github.com/mwenyoa/Portfolio/issues"
   },
-  "homepage": "https://github.com/mwenyoa/Portfolio-mobile-skeleton#readme",
+  "homepage": "https://github.com/mwenyoa/Portfolio#readme",
   "devDependencies": {
     "hint": "^6.1.10",
     "stylelint": "^13.13.1",
