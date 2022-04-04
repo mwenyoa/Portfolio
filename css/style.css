@@ -46,6 +46,14 @@ button:hover {
   transform: scale(1.1);
 }
 
+.mobnav-menu {
+  display: none;
+}
+
+.closeBtn {
+  display: none;
+}
+
 @keyframes animateme {
   100% { transform: rotate(360deg); }
 }
@@ -602,6 +610,10 @@ textarea:valid {
   display: none;
 }
 
+.show-menu {
+transform: translateY(0);
+}
+
 @media (min-width: 768px) {
   * {
     box-sizing: border-box;
@@ -1065,5 +1077,9 @@ textarea:valid {
 
   nav {
     background-color: #fff;
+  }
+
+  .mobnav-menu {
+    display:none;
   }
 }
