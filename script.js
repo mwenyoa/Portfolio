@@ -2,7 +2,6 @@ const navBars = document.querySelector('#menu-icon');
 const navList = document.querySelector('.mobnav-menu');
 const navItems = document.querySelectorAll('.mobnav-list');
 const closeMenuBtn = document.querySelector('.closeBtn');
-const bodyElement = document.querySelector('body');
 function menuToggler() {
   if (navList.classList.contains('show-menu')) {
     closeMenuBtn.style.display = 'none';
@@ -14,9 +13,7 @@ function menuToggler() {
     navList.classList.add('show-menu');
     navBars.style.display = 'none';
     navList.style.display = 'block';
-    bodyElement.style.backgroundColor = '#6070ff'
   }
-  // add event listner to register method
 }
 closeMenuBtn.addEventListener('click', menuToggler);
 navBars.addEventListener('click', menuToggler);
