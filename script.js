@@ -108,6 +108,17 @@ const myworkDesk = [
   },
 ];
 
+function createTechList(technologies, className) {
+  const langList = document.createElement('ul');
+  langList.classList.add('lang-list');
+  for (let i = 0; i < technologies.length; i += 1) {
+    const element = document.createElement('li');
+    element.classList.add(className);
+    element.innerHTML = technologies[i];
+    langList.appendChild(element);
+  }
+  return langList.innerHTML;
+}
 // Modal Pop Up
 function gem(ex, isClass = false) {
   if (isClass) {
@@ -125,6 +136,7 @@ function popupDesk(proIndx) {
   gem('modalTextMobile', true).innerText = project.shortDesc;
   // desktop heading
   const deskPopid = document.getElementById('mycv');
+  const listId = document.querySelector('.lang-list2');
   const deskPop = document.createElement('deskPop');
   deskPop.innerHTML = `<ul class="cards-container">
               <li class="card-detail dcanopy2_face">${project.projDetails[0]}</li>
@@ -138,6 +150,7 @@ function popupDesk(proIndx) {
               </li>
             </ul>`;
   deskPopid.innerHTML = deskPop.innerHTML;
+  listId.innerHTML = createTechList(project.techlgsPopup, 'langu2');
   gem('myModal').style.display = 'block';
 }
 
@@ -255,18 +268,6 @@ const myworkMobile = [
   },
 ];
 
-
-function createTechList(technologies, className) {
-  const langList = document.createElement('ul');
-  langList.classList.add('lang-list');
-  for (let i = 0; i < technologies.length; i += 1) {
-    const element = document.createElement('li');
-    element.classList.add(className);
-    element.innerHTML = technologies[i];
-    langList.appendChild(element);
-  }
-  return langList.innerHTML;
-}
 // eslint-disable-next-line no-unused-vars
 function popUpF(proIdx) {
   const projectMob = myworkMobile[proIdx];
@@ -292,7 +293,7 @@ function popUpF(proIdx) {
     </li>
     </ul>`;
   mobPopid.innerHTML = PopMob.innerHTML;
-  techUsId.innerHTML = createTechList(projectMob.mobtechlgsPopup, "langu2");
+  techUsId.innerHTML = createTechList(projectMob.mobtechlgsUsed, 'langu2');
   gem('myModal').style.display = 'block';
 }
 

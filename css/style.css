@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.lang-list2 {
+  display: none !important;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -182,11 +186,12 @@ header .logo {
   margin: 0;
   padding: 0;
 }
+
 .langu2 {
-  background-color: wheat;
+  background-color: #ebebff;
   padding: 10px;
   border-radius: 8px;
-  color: #091e42;
+  color: #0d5ce6;
 }
 
 .header .social a {
@@ -904,6 +909,11 @@ textarea:valid {
     background-color: #fff;
   }
 
+  .lang-list2 {
+    display: block !important;
+    font-size: 17px;
+  }
+
   .nav-menu .nav-list {
     padding-left: 32px;
     margin-top: 25px;
@@ -927,6 +937,10 @@ textarea:valid {
   }
 
   .header-mobile {
+    display: none;
+  }
+
+  .lang-list {
     display: none;
   }
 
@@ -1390,17 +1404,18 @@ textarea:valid {
   .modalFlex {
     display: flex;
     flex-direction: column;
-    margin-left: 22px;
+    margin-left: 100px;
   }
 
   .modalText {
     display: block;
     color: #344563;
-    width: 65%;
+    width: 85%;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     margin: 0;
+    text-align: justify;
   }
 
   .modalTextMobile {
@@ -1422,7 +1437,8 @@ textarea:valid {
 
   .modalButtons {
     margin-left: 0;
-    justify-content: start;
+    justify-content: end;
+    m
   }
 
   .canopy2_face {
