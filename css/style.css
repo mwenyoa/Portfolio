@@ -46,8 +46,8 @@ button:hover {
   transform: scale(1.1);
 }
 
-.error-message{
-  color: #ff0000;
+.error-message {
+  color: #e01515;
   background-color: #fff;
   padding: 5px;
   display: none;
@@ -543,13 +543,6 @@ header .logo {
   justify-content: center;
 }
 
-.error-message{
-  color: #ff0000;
-  background-color: #fff;
-  padding: 5px;
-  display: none;
-}
-
 .head-content .Contact-Me {
   display: flex;
   flex-direction: column;
@@ -688,6 +681,13 @@ textarea:valid {
     height: 70px;
     overflow-x: hidden;
     background-color: #fff;
+  }
+
+  .error-message {
+    color: #f00;
+    background-color: #fff;
+    padding: 5px;
+    display: none;
   }
 
   .nav-menu .nav-list {

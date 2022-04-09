@@ -21,7 +21,7 @@ navItems.forEach((navItem) => {
   navItem.addEventListener('click', menuToggler);
 });
 
-//validate email
+// validate email
 const form = document.querySelector('#contact-form');
 
 function isValidated(input) {
