@@ -241,6 +241,7 @@ const myworkMobile = [
     moblongDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     mobtonicImgUrl: 'mobile-images/works/Portfolio2.png',
     mobtechlgsUsed: ['html', 'css', 'javascript'],
+    mobtechlgsPopup: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
     mobPopUpImgUrl: 'mobile-images/works/Portfolio2.png',
     mobliveLink: '',
     mobsourceLink: 'https://github.com/mwenyoa/Portfolio',
