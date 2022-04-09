@@ -46,6 +46,13 @@ button:hover {
   transform: scale(1.1);
 }
 
+.error-message{
+  color: #ff0000;
+  background-color: #fff;
+  padding: 5px;
+  display: none;
+}
+
 .mobnav-menu {
   display: none;
   opacity: 0.96;
@@ -534,6 +541,13 @@ header .logo {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.error-message{
+  color: #ff0000;
+  background-color: #fff;
+  padding: 5px;
+  display: none;
 }
 
 .head-content .Contact-Me {

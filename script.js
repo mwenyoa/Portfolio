@@ -20,3 +20,20 @@ navBars.addEventListener('click', menuToggler);
 navItems.forEach((navItem) => {
   navItem.addEventListener('click', menuToggler);
 });
+
+//validate email
+const form = document.querySelector('#contact-form');
+
+function isValidated(input) {
+  if (input === input.toLowerCase()) return true;
+  return false;
+}
+
+form.addEventListener('submit', (event) => {
+  const email = document.getElementById('email');
+  if (!isValidated(email.value)) {
+    event.preventDefault();
+    const error = document.querySelector('.error-message');
+    error.style.display = 'block';
+  }
+});
