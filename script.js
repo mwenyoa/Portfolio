@@ -254,10 +254,22 @@ const myworkMobile = [
   },
 ];
 
+
+function createTechList(technologies, className) {
+  const langList = document.createElement('ul');
+  langList.classList.add('lang-list');
+  for (let i = 0; i < technologies.length; i += 1) {
+    const element = document.createElement('li');
+    element.classList.add(className);
+    element.innerHTML = technologies[i];
+    langList.appendChild(element);
+  }
+  return langList.innerHTML;
+}
 // eslint-disable-next-line no-unused-vars
 function popUpF(proIdx) {
   const projectMob = myworkMobile[proIdx];
-  const techUsId = document.querySelector('#techId');
+  const techUsId = document.querySelector('.lang-list');
   gem('hd').innerText = projectMob.mobprojName;
   gem('mImage', true).src = projectMob.mobPopUpImgUrl;
   gem('modalText', true).innerText = projectMob.moblongDesc;
@@ -279,8 +291,7 @@ function popUpF(proIdx) {
     </li>
     </ul>`;
   mobPopid.innerHTML = PopMob.innerHTML;
-  const technolgs = projectMob.mobtechlgsPopup.map((tusd) => `<li class="langu2">${tusd.join('')}</li>`);
-  techUsId.innerHTML = technolgs;
+  techUsId.innerHTML = createTechList(projectMob.mobtechlgsPopup, "langu2");
   gem('myModal').style.display = 'block';
 }
 
