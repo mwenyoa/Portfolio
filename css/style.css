@@ -9,11 +9,41 @@ html {
   scroll-behavior: smooth;
 }
 
+.lang-list2 {
+  display: none !important;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f7f7f9;
+  width: 100%;
+  height: 100%;
+}
+
+.canopy2_face {
+  font-family: poppins, sans-serif;
+  color: #344563 !important;
+  font-weight: bold !important;
+  font-size: 17px;
+  line-height: 16px;
+  position: static;
+  width: 55px;
+  height: 16px;
+  padding-left: 0;
+  padding-top: 8px;
+  margin-left: 21px;
+}
+
+button {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 @keyframes slideInLeft {
@@ -159,6 +189,23 @@ header .logo {
   line-height: 24px;
 }
 
+.lang-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  column-gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.langu2 {
+  background-color: #ebebff;
+  padding: 10px;
+  border-radius: 8px;
+  color: #0d5ce6;
+}
+
 .header .social a {
   color: #505f79;
 }
@@ -199,6 +246,15 @@ header .logo {
   display: none;
 }
 
+.modalImage img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.modalImageDesktop img {
+  display: none;
+}
+
 .work-section .card img {
   height: 220px;
   width: 295px;
@@ -209,6 +265,19 @@ header .logo {
 
 .img-center {
   justify-content: center;
+}
+
+.grey-cirlce {
+  position: static;
+  width: 8px;
+  height: 8px;
+  left: 87px;
+  top: 16px;
+  color: #c1c7d0 !important;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 4px;
 }
 
 .project-title {
@@ -229,6 +298,13 @@ header .logo {
 
 .card > ul > li {
   list-style: none;
+}
+
+.modalButtons button {
+  border: 1px solid #6070ff;
+  padding: 12px 10px;
+  color: #396df2;
+  font-size: 17px;
 }
 
 .card > ul > li > button {
@@ -291,6 +367,7 @@ header .logo {
   height: 8px;
   left: 67px;
   top: 12px;
+  order: 0;
 }
 
 .card .card-sub-head .sub-text {
@@ -300,10 +377,19 @@ header .logo {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
+  order: 0;
+}
+
+.modal .canopy,
+.option {
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
 }
 
 .card .card-sub-head .canopy {
-  color: #344563;
+  color: #344563 !important;
 }
 
 .card .project-title {
@@ -339,7 +425,9 @@ header .logo {
   color: #396df2;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 17px !important;
+  line-height: 24px;
 }
 
 .viewpro-btn:hover {
@@ -365,13 +453,14 @@ header .logo {
 }
 
 .card .card-sub-head {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   width: 260px;
   font-weight: 600;
-  color: #344563;
+  color: #344563 !important;
   padding: 0 2px;
+  flex-direction: row;
 }
 
 .head-content .header .lets-connect {
@@ -624,6 +713,23 @@ textarea {
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  font-weight: 500 !important;
+  font-size: 17px !important;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  width: auto;
+}
+
+.cont-btn-center {
+  align-self: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -633,6 +739,7 @@ textarea {
   letter-spacing: 0.03em;
   color: #6070ff;
   width: auto;
+  margin: 10px auto;
 }
 
 input:valid {
@@ -661,6 +768,136 @@ textarea:valid {
   cursor: pointer;
 }
 
+/* Popup modal mobile */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 35px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  margin-bottom: 35px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #67798e;
+  float: right;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalText {
+  display: none;
+}
+
+.modalTextMobile {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin: 9px 6px;
+}
+
+.modalLang {
+  display: none;
+}
+
+.option-modal {
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  position: static;
+  width: 88px;
+  padding-top: 8px;
+}
+
+.modalButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 32px;
+}
+
+.TopModalItems {
+  padding-bottom: 5 !important;
+}
+
+.TopModalItems h2 {
+  color: #172b4d;
+  font-weight: bold;
+  line-height: 44px;
+  font-size: 32px;
+  font-family: poppins, sans-serif;
+  margin-left: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.MidModalItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  color: #172b4d;
+  font-weight: bold;
+  line-height: 44px;
+  font-size: 34px;
+  font-family: poppins, sans-serif;
+  margin-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.card-detail {
+  display: inline;
+  text-align: center;
+}
+
+.card-detail ::after {
+  content: '\00b7';
+  font-size: 1.5em;
+}
+
+.card-detail :last-child::after {
+  content: none;
+}
+
+.optiond2_full,
+.instruction-show,
+.dcanopy2_face,
+.dcanopy2_facebook,
+.desktop-image {
+  display: none;
+}
+
 @media (min-width: 768px) {
   * {
     box-sizing: border-box;
@@ -684,11 +921,17 @@ textarea:valid {
     background-color: #fff;
   }
 
+
   .error-message {
     color: #f00;
     background-color: #fff;
     padding: 5px;
     display: none;
+
+  .lang-list2 {
+    display: block !important;
+    font-size: 17px;
+
   }
 
   .nav-menu .nav-list {
@@ -714,6 +957,10 @@ textarea:valid {
   }
 
   .header-mobile {
+    display: none;
+  }
+
+  .lang-list {
     display: none;
   }
 
@@ -787,8 +1034,8 @@ textarea:valid {
     background: #fff;
   }
 
-  .mobile {
-    display: none;
+  .works-section {
+    display: none !important;
   }
 
   .works-section-desktop .card-desk {
@@ -809,13 +1056,12 @@ textarea:valid {
   .works-section-desktop .card-desk .img-left {
     width: 100%;
     height: 100%;
-    margin: 24px;
     border-radius: 8px;
     grid-area: A;
   }
 
   .card .img-num1 {
-    margin: 30px !important;
+    margin: 20px;
   }
 
   .works-section-desktop .card-desk .card-left-content {
@@ -890,6 +1136,17 @@ textarea:valid {
     font-family: "Poppins", sans-serif;
   }
 
+  .cards-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 23px 0;
+  }
+
+  .cards-container li {
+    padding: 0;
+    margin-right: 10px;
+  }
+
   .works-section-desktop .card-desk ul li {
     list-style: none;
     margin-right: 10px;
@@ -907,32 +1164,28 @@ textarea:valid {
     padding: 0;
   }
 
-  .canopy {
-    width: 75px;
-    height: 24px;
-    left: 0;
-    top: 8px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #344563;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0;
-  }
-
   .fa-circle {
     position: static;
     width: 8px;
     height: 8px;
     left: 87px;
     top: 16px;
-    color: #c1c7d0;
+    color: #c1c7d0 !important;
     flex: none;
-    order: 1;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 12px;
+  }
+
+  .grey-cirlce {
+    position: static;
+    width: 8px;
+    height: 8px;
+    left: 87px;
+    top: 16px;
+    color: #c1c7d0 !important;
+    flex: none;
+    order: 0;
     flex-grow: 0;
     margin: 0 12px;
   }
@@ -940,7 +1193,7 @@ textarea:valid {
   .desk-pro-btn {
     padding: 12px;
     text-decoration: none;
-    border: 1px solid #6070ff;
+    border: 1px solid #4053fc;
     border-radius: 8px;
     height: 48px;
     color: #396df2;
@@ -994,7 +1247,7 @@ textarea:valid {
   }
 
   .desk-pro-btn:hover {
-    background-color: #396df2;
+    background-color: #4053fc;
     color: #fff;
   }
 
@@ -1113,11 +1366,12 @@ textarea:valid {
     margin: 0 auto;
   }
 
-  form button {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 30px !important;
+  .modalButtons button {
+    margin: 0 10px;
+    padding: 5px !important;
+    border-radius: 10px !important;
+    background-color: #fff;
+    width: auto;
   }
 
   form button:hover {
@@ -1146,5 +1400,248 @@ textarea:valid {
 
   .humburger {
     display: none;
+  }
+
+  /* poppup */
+  .lang {
+    padding-top: 40px;
+  }
+
+  .modalImage img {
+    display: none;
+  }
+
+  .modalImageDesktop img {
+    width: 100%;
+    display: block;
+  }
+
+  .modalTextWrapper {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .modalFlex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  .modalText {
+    display: block;
+    color: #344563;
+    width: 85%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .modalTextMobile {
+    display: none;
+  }
+
+  .LangInModal {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .LangInModal2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
+
+  .modalButtons {
+    margin-left: 0;
+    justify-content: end;
+    margin-right: 50px !important;
+  }
+
+  .canopy2_face {
+    font-family: poppins, sans-serif;
+    color: #344563 !important;
+    font-weight: bold !important;
+    font-size: 17px;
+    line-height: 16px;
+    position: static;
+    width: 55px;
+    height: 16px;
+    padding-left: 0;
+    padding-top: 8px;
+    margin-left: 21px;
+  }
+
+  .bBg {
+    background-color: #4053fc;
+    color: #fff;
+  }
+
+  .bBg:hover {
+    color: #4053fc;
+    background-color: #fff;
+    border-color: #4053fc;
+  }
+
+  @media (min-width: 1023px) {
+    .canopy2_face {
+      font-family: poppins, sans-serif;
+      color: #344563 !important;
+      font-weight: bold !important;
+      font-size: 17px;
+      line-height: 16px;
+      position: static;
+      width: 55px;
+      height: 16px;
+      padding-left: 0;
+      padding-top: 8px;
+      margin-left: 21px;
+    }
+
+    .modalImageDesktop img {
+      width: 100%;
+      display: block;
+    }
+
+    .modalLang {
+      display: none;
+    }
+
+    .card-flex {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .contents {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dcanopy2_face,
+    .dcanopy2_facebook {
+      font-family: poppins, sans-serif;
+      color: #344563;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      position: static;
+      margin-bottom: 5px;
+      width: 75px;
+      height: 16px;
+      padding-left: 0;
+      padding-top: 8px;
+      margin-right: 12px;
+    }
+
+    .canopy {
+      display: block;
+      order: 0;
+    }
+
+    .optiond2_full {
+      font-family: poppins, sans-serif;
+      color: #7a869a;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      position: static;
+      padding-top: 8px;
+      margin-right: 12px;
+    }
+
+    .option {
+      display: none;
+    }
+
+    .desktop_show {
+      color: #091e42;
+      font-weight: bold;
+      line-height: 52px;
+      font-size: 40px;
+      margin-top: 30px;
+      font-family: poppins, sans-serif;
+    }
+
+    .head {
+      display: none;
+    }
+
+    .langu2,
+    .desktop-image,
+    .desktop_show,
+    .instruction-show,
+    .optiond2_full,
+    .dcanopy2_face,
+    .dcanopy2_facebook {
+      display: block;
+    }
+
+    .langu2 {
+      background-color: #ebebff;
+      padding: 6px 14px;
+      color: #4472e7;
+      border-radius: 8px;
+      font-weight: 500;
+      font-family: poppins, sans-serif;
+      display: inline-block;
+      margin: 10px 20px 10px 0;
+      font-size: 12px;
+    }
+
+    .langu {
+      background-color: #ebebff;
+      padding: 6px 14px;
+      color: #4472e7;
+      border-radius: 8px;
+      font-weight: 500;
+      font-family: poppins, sans-serif;
+      display: inline-block;
+      margin: 10px 20px 10px 0;
+      font-size: 12px;
+    }
+
+    .cards-container {
+      display: flex;
+      align-items: center;
+      margin: 10px 0 23px 0;
+    }
+
+    .dcanopy2_facebook {
+      width: 100px;
+    }
+
+    .cards-container li {
+      padding: 0;
+      margin-right: 10px;
+    }
+
+    .skills-section {
+      margin-left: 20px;
+    }
+
+    .instruction-show {
+      width: auto;
+      height: auto;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 24px;
+      color: #344563;
+      margin: 30px 0 20px 0;
+    }
+
+    .bBg {
+      background-color: #4053fc;
+      color: #fff;
+    }
+
+    .bBg:hover {
+      color: #4053fc;
+      background-color: #fff;
+      border-color: #4053fc;
+    }
   }
 }
