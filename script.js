@@ -22,7 +22,6 @@ navItems.forEach((navItem) => {
   navItem.addEventListener('click', menuToggler);
 });
 
-
 // validate email
 const form = document.querySelector('#contact-form');
 
@@ -359,4 +358,3 @@ window.onclick = function (event) {
     modal.style.display = 'block';
   }
 };
-
