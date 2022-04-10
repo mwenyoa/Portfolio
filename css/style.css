@@ -49,8 +49,9 @@ button:hover {
 .error-message {
   color: #e01515;
   background-color: #fff;
-  padding: 5px;
+  padding: 8px;
   display: none;
+  border-radius: 5px;
 }
 
 .mobnav-menu {
