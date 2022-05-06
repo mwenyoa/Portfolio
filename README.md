@@ -1,3 +1,5 @@
+
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Portfolio
@@ -5,6 +7,8 @@
 
 > Description the project.
 This a personal  portfolio project to make us familiar with tools(like **Figma**) when designing the user interface or UI of a personal portfolio website for website developer as tool of self marketing to the employers or clients.
+
+![portfoliopic](https://user-images.githubusercontent.com/28694196/167122322-cb78b884-2197-43c1-a9c5-020349dfe206.png)
 
 ## Built With
 
