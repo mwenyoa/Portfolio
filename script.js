@@ -42,14 +42,14 @@ form.addEventListener('submit', (event) => {
 // Deskstop Works section logic
 const myworkDesk = [
   {
-    projName: 'To Do List',
-    projDetails: ['PROJECT', 'Front End Dev', '2022'],
-    shortDesc: 'To-Do-List is a tool that helps you organize your daily activities',
-    longDesc: "To-Do-List is a tool that helps you organize your day. It allows you to add a list of things you want to do, marking them as complete as well as removing them from the list.",
-    tonicImgUrl: 'desktop-images/todo-list-pic.png',
+    projName: 'Tonic',
+    projDetails: ['CANOPY', 'Back End Dev', '2015'],
+    shortDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    longDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    tonicImgUrl: 'desktop-images/Portfolio-card1.png',
     techlgsUsed: ['html', 'css', 'javascript'],
-    desktopPopUpImgUrl: 'desktop-images/todo-list-pic.png',
-    techlgsPopup: ['html', 'css', 'javaScript', 'github', 'webpack'],
+    desktopPopUpImgUrl: 'desktop-images/Portfolio-card1.png',
+    techlgsPopup: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
     liveLink: '',
     sourceLink: '',
     imgPos: 'img-left',
@@ -206,14 +206,14 @@ function displayProject() {
 
 const myworkMobile = [
   {
-    mobprojName: 'To Do List',
-    mobprojDetails: ['PROJECT', 'Front End Dev', '2022'],
-    mobshortDesc: 'To-Do-List is a tool that helps you organize your daily activities',
-    moblongDesc: "To-Do-List is a tool that helps you organize your day. It allows you to add a list of things you want to do, marking them as complete as well as removing them from the list.",
-    mobtonicImgUrl: 'mobile-images/works/todo-list-pic.png',
+    mobprojName: 'Tonic',
+    mobprojDetails: ['CANOPY', 'Back End Dev', '2015'],
+    mobshortDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    moblongDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    mobtonicImgUrl: 'mobile-images/works/SnapshootPortfolio.png',
     mobtechlgsUsed: ['html', 'css', 'javascript'],
-    mobPopUpImgUrl: 'mobile-images/works/todo-list-pic.png',
-    mobtechlgsPopup: ['html', 'css', 'javaScript', 'github', 'webpack'],
+    mobPopUpImgUrl: 'mobile-images/works/SnapshootPortfolio.png',
+    mobtechlgsPopup: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
     mobliveLink: '',
     mobsourceLink: '',
     mobimgPos: 'img-center',
